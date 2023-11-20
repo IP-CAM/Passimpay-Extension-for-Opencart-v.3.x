@@ -40,7 +40,7 @@ class ControllerExtensionPaymentPassimpay extends Controller
         curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type: application/x-www-form-urlencoded']);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
-        curl_setopt($curl, CURLOPT_URL, 'https://passimpay.io/api/createorder');
+        curl_setopt($curl, CURLOPT_URL, 'https://api.passimpay.io/createorder');
         curl_setopt($curl, CURLOPT_POST, true);
         curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
